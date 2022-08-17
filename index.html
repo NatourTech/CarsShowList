@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body dir="auto">
+    <div >
+        <h1>All Cars</h1>
+        <hr>
+       
+        <div >
+            <table>
+                <thead>
+                    <!--name, color, year, liecence_number, price, image-->
+                    <td>CarName</td>
+                    <td>Color</td>
+                    <td>Year</td>
+                    <td>Liecence_number</td>
+                    <td>price</td>
+                    <td>ImageLink</td>
+                    
+                </thead>
+
+                <tr>
+                    <!--name, color, year, liecence_number, price, image-->
+                    <td><input placeholder="AddCarName" type="input" id = "name" class="in"></td>
+                    <td><input placeholder="AddCarColor" type="input" id = "color"  class="in"></td>
+                    <td><input placeholder="AddCarYear" type="input" id = "year"  class="in"></td>
+                    <td><input placeholder="AddCarLiecence" type="input" id = "liecence_number"  class="in"></td>
+                    <td><input placeholder="AddCarPrice" type="input" id = "price"  class="in"></td>
+                    <td><input placeholder="AddCarImage" type="input" id = "imageLink"  class="in"></td>
+                    <td><input  type="button" value="Add" id = "add" onclick = "creatCar()"  class="add_button"></td>
+                </tr>
+               
+            </table>
+        </div>
+    </div>
+
+
+    <br>
+    <div id="existCars" style="display: none;">
+        <h3>All Cars Availble</h3>
+        <table id = "table" class="table">
+            <thead class="show">
+                <!--name, color, year, liecence_number, price, image-->
+                <td>CarName</td>
+                <td>Color</td>
+                <td>Year</td>
+                <td>Liecence_number</td>
+                <td>price</td>
+                <td>ImageLink</td>
+                <td><button onclick="back()" class="previous"> Back </button></td>
+                <td><button onclick="next()" class="next">Next</button></td>
+                
+                
+            </thead>
+        </table>
+
+    </div>
+  
+
+    <script src="./app.js"></script>
+   
+</body>
+</html>
